@@ -8,11 +8,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { MENU_ITEMS } from "@/constants";
 import styles from "./index.module.css";
-import { useDispatch } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
 import { menuItemClick, actionItemClick } from "@/slice/menuSlice";
 const Menu = () => {
   const dispatch = useDispatch();
-
+const activeMenuItem = useSelector((state)=> state.menu.activeMenuItem)
   function handleMenuClick(itemName) {
     //itemName will come in action not state
     dispatch(menuItemClick(itemName));

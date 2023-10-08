@@ -3,6 +3,7 @@ const COLORS = {
   RED: "red",
   GREEN: "green",
   YELLOW: "yellow",
+  WHITE:"white"
 };
 
 const MENU_ITEMS = {
