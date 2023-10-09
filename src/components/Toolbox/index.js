@@ -26,7 +26,7 @@ const Toolbox = () => {
   const updateColor = (newColor) => {
     dispatch(changeColor({ item: activeMenuItem, color: newColor }));
   };
-  console.log(useSelector((state) => state.toolBox));
+  // console.log(useSelector((state) => state.toolBox));
   return (
     <>
       <div className={styles.toolBoxContainer}>

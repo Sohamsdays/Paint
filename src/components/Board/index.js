@@ -33,7 +33,7 @@ const Board = () => {
       anchor.href = URL;
       anchor.download = "sketch.jpg";
       anchor.click();
-      console.log(URL);
+      //console.log(URL);
       dispatch(actionItemClick(null));
     }
   }, [actionMenuItem]);
@@ -60,7 +60,7 @@ const Board = () => {
     // height and width
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    console.log(canvas.width);
+    //console.log(canvas.width);
 
     const handleMouseDown = (e) => {
       shouldDraw.current = true;
@@ -88,7 +88,7 @@ const Board = () => {
     };
   }, []);
 
-  console.log(color, size, 121);
+  console.log("Hire me Email: sohamsdays@gmail.com");
   //console.log(canvasRef.current)
   return <canvas ref={canvasRef}></canvas>;
 };
