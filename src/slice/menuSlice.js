@@ -8,7 +8,7 @@ const initialState = {
   actionMenuItem: null,
 };
 
-console.log(MENU_ITEMS.PENCIL + "kjhg");
+
 // What All functions you can perform on the STATE ABOVE
 export const menuSlice = createSlice({
   name: "menu",
